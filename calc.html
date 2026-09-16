@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calc</title>
+</head>
+<body>
+    <div id="main_ui" class="container">
+        <input id="screen" readonly>
+        <div id="keys" class="container">
+            <button id="+" class="operation" type="button" onclick="append_operation('+')">+</button>
+            <button id="-" class="operation" class="keys" type="button" onclick="append_operation('-')">-</button>
+            <button id="*" class="operation" type="button" onclick="append_operation('*')">*</button>
+            <button id="root" class="operation" type="button" onclick="append_operation('√')">√</button>
+            <button id="clear" class="clear" type="button" onclick="clearScreen()">C</button>
+            <button id="backspace" class="backspace" type="button" onclick="backspace()">&#9003;</button>
+
+            <button id="1" class="number" type="button" onclick="append_display('1')">1</button>
+            <button id="2" class="number" type="button" onclick="append_display('2')">2</button>
+            <button id="3" class="number" type="button" onclick="append_display('3')">3</button>
+            <button id="4" class="number" type="button" onclick="append_display('4')">4</button>
+            <button id="5" class="number" type="button" onclick="append_display('5')">5</button>
+            <button id="6" class="number" type="button" onclick="append_display('6')">6</button>
+            <button id="7" class="number" type="button" onclick="append_display('7')">7</button>
+            <button id="8" class="number" type="button" onclick="append_display('8')">8</button>
+            <button id="9" class="number" type="button" onclick="append_display('9')">9</button>
+            <button id="0" class="number" type="button" onclick="append_display('0')">0</button>
+
+            <button id="equal" class="keys" type="button" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="Treev2.js"></script>
+    <script src="calc.js"></script>
+    <script src="evaluate.js"></script>
+    
+</body>
+</html>
